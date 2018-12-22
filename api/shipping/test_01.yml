@@ -1,12 +1,9 @@
 request:
   method: GET
-  urlPath: /todos/1
+  urlPath: /shippings/info
 response:
   status: 200
   headers:
-    Content-Type: application/json;charset=UTF-8
+    Content-Type: text/plain;charset=ISO-8859-1
   body: |
-    {
-      "todoId": 11,
-      "text": "今天有培训"
-    }
+    v1

@@ -50,7 +50,7 @@ public class ShippingController {
 
     @GetMapping("/info")
     public String info() throws UnknownHostException {
-        return "V1";
+        return "v1";
     }
 
     @GetMapping("/hostname")
