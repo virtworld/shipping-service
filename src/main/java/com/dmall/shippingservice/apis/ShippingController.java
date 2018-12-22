@@ -9,6 +9,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.List;
 
 @RestController
@@ -47,7 +49,12 @@ public class ShippingController {
     }
 
     @GetMapping("/info")
-    public String info() {
+    public String info() throws UnknownHostException {
         return "V1";
+    }
+
+    @GetMapping("/hostname")
+    public String hostname() throws UnknownHostException {
+        return InetAddress.getLocalHost().getHostName().toString();
     }
 }

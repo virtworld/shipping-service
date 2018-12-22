@@ -1,0 +1,12 @@
+request:
+  method: GET
+  urlPath: /todos/1
+response:
+  status: 200
+  headers:
+    Content-Type: application/json;charset=UTF-8
+  body: |
+    {
+      "todoId": 11,
+      "text": "今天有培训"
+    }
