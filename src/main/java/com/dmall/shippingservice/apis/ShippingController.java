@@ -57,4 +57,8 @@ public class ShippingController {
     public String hostname() throws UnknownHostException {
         return InetAddress.getLocalHost().getHostName().toString();
     }
+    @GetMapping("/shipping")
+    public String shipping() {
+        return "shipping hello";
+    }
 }
